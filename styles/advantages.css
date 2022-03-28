@@ -1,0 +1,85 @@
+.advantages {
+  margin: 140px auto 0;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.advantages__item {
+  padding: 0 16px;
+  height: 155px;
+  width: 268px;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.advantages__item h3 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #156963;
+  margin-left: 80px;
+  height: 48px;
+}
+
+.advantages__item h4 {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #2c1500;
+}
+.advantages__item__delivery::before {
+  position: absolute;
+  display: inline-flex;
+  content: "";
+  background-image: url("../assets/icons/delivery.svg");
+  background-size: 42px 48px;
+  height: 48px;
+  width: 42px;
+  left: 40px;
+}
+.advantages__item__service::before {
+  position: absolute;
+  display: inline-flex;
+  content: "";
+  background-image: url("../assets/icons/service.svg");
+  background-size: 42px 48px;
+  height: 48px;
+  width: 42px;
+  left: 40px;
+}
+.advantages__item__plant::before {
+  position: absolute;
+  display: inline-flex;
+  content: "";
+  background-image: url("../assets/icons/plant.svg");
+  background-size: 42px 48px;
+  height: 48px;
+  width: 42px;
+  left: 40px;
+}
+
+.advantages__item__price::before {
+  position: absolute;
+  display: inline-flex;
+  content: "";
+  background-image: url("../assets/icons/dollar.svg");
+  background-size: 42px 48px;
+  height: 48px;
+  width: 42px;
+  left: 40px;
+}

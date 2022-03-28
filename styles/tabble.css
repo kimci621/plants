@@ -1,0 +1,6 @@
+.tabble {
+  display: flex;
+  border-top: 1px solid #262626;
+  justify-content: space-between;
+  align-items: flex-start;
+}

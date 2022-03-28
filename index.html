@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plants</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito:wght@700&family=PT+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div id="root">
+    <div class="container">
+      <!-- modal -->
+      <div class="modal">
+        <button type="button" class="modal__close__btn"></button>
+        <form class="modal__form">
+          <div class="modal__info__icon"></div>
+          <div class="modal__info__tittle">Форма сайта</div>
+          <div class="modal__info__text">Lorem ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry</div>
+          <div class="modal__inputs">
+            <input class="modal__input__name" name="name" type="text" placeholder="Имя" required="true" minlength="3"
+              maxlength="62" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+
+            <input class="modal__input__tel" name="tel" placeholder="Номер телефона"
+              placeholder="" required="true" minlength="11" maxlength="12">
+          </div>
+          <div class="modal__btns">
+            <button class="modal__btn__close" type="button">Отменить</button>
+            <button class="modal__btn__send" type="submit" disabled="true">Отправить</button>
+          </div>
+
+        </form>
+      </div>
+      <!-- modal -->
+      <!-- spinner -->
+      <div class="spinner">
+        <div class="lds-spinner">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <!-- spinner -->
+      <!-- slider -->
+      <div id="slider">
+        <img src="assets/images/slider_image.jpg" alt="slider_img" />
+        <div class="slider__info">
+          <div class="slider__info__form">
+            <button type="button" class="slider__info__form_btn"> Форма </button>
+          </div>
+          <div class="slider__info__text">
+            <strong>
+              <div class="slider__info__text__tittle">
+                <h2>Kembang Flower Mantap</h2>
+              </div>
+            </strong>
+            <h4 class="slider__info__text__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s,
+            </h4>
+          </div>
+          <div class="slider__info__slider__btns">
+            <div class="slider__info__slider__btns__all prev">
+              <button type="button">Previous</button>
+              <h3 class="slider__info__slider__btns__all__name blue">Kaktus Plant</h3>
+            </div>
+            <div class="slider__info__slider__btns__all next">
+              <button type="button">Next</button>
+              <h3 class="slider__info__slider__btns__all__name white">Rahasia Plant</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider -->
+      <!-- mini block advantages -->
+      <div class="advantages">
+        <div class="advantages__item">
+          <h3 class="advantages__item__delivery">Fast
+            <p /> Delivery</h3>
+          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard </h4>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__item__service">Great Customer
+            <p />Service</h3>
+          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard </h4>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__item__plant">Original
+            <p /> Plants</h3>
+          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard </h4>
+        </div>
+        <div class="advantages__item">
+          <h3 class="advantages__item__price">Affordable
+            <p /> Price</h3>
+          <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard </h4>
+        </div>
+
+      </div>
+      <!-- mini block advantages -->
+      <!-- main products on page -->
+      <div class="products">
+        <div class="products__tittle">
+          <h3 class="products__tittle__tittle">Featured Plants</h3>
+          <select class="products__tittle__select" name="sort" id="sort" default="Cheaper First">
+            <option value="Cheaper First">Cheaper First</option>
+            <option value="Expensive First">Expensive First</option>
+          </select>
+        </div>
+        <hr id="products__line" />
+        <div class="products__items">
+          <div class="products__items__item">
+            <img src="./assets/images/kaktus.png" alt="kaktus">
+            <h3>Kaktus Plants</h3>
+            <h4>IDR 85.000</h4>
+          </div>
+          <div class="products__items__item">
+            <img src="./assets/images/landak.png" alt="kaktus">
+            <h3>Landak Plants</h3>
+            <h4>IDR 105.000</h4>
+          </div>
+          <div class="products__items__item">
+            <img src="./assets/images/kecubung.png" alt="kaktus">
+            <h3>Kecubung Plants</h3>
+            <h4>IDR 85.000</h4>
+          </div>
+          <div class="products__items__item">
+            <img src="./assets/images/kecubung2.png" alt="kaktus">
+            <h3>Kecubung Plants</h3>
+            <h4>IDR 85.000</h4>
+          </div>
+          <div class="products__items__item">
+            <img src="./assets/images/kecubung3.png" alt="kaktus">
+            <h3>Kecubung Plants</h3>
+            <h4>IDR 85.000</h4>
+          </div>
+        </div>
+      </div>
+      <!-- main products on page -->
+    </div>
+  </div>
+  </div>
+  <script type="module" src="./js/script.js"></script>
+  <script type="module" src="./js/api.js"></script>
+</body>
+
+</html>
