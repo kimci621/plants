@@ -75,6 +75,17 @@ window.addEventListener("DOMContentLoaded", () => {
       sendFormBtn.style.boxShadow = '0 0 2px 2px red'
     }
   };
+  const tableinModal = () => {
+      ModalForm.style.display = 'none';
+            users.forEach(user => {
+              modal.append(createUser(user.name || 'empty name', user.id || 'empty id', user.title || 'empty tittle'));
+            })
+            openModal();
+            spinner.style.display = "none"
+            nameInput.value = "";
+            telInput.value = "";
+            console.log(users);
+  };
 
   //send data from form
   sendFormBtn.addEventListener('click', async (e) => {
@@ -94,17 +105,10 @@ window.addEventListener("DOMContentLoaded", () => {
         await newdata.forEach(user => {
           if (user.userId === 5 && user.completed === false) {
             users.push(user);
-            ModalForm.style.display = 'none';
-            users.forEach(user => {
-              modal.append(createUser(user.name || 'empty name', user.id || 'empty id', user.title || 'empty tittle'));
-            })
-            openModal();
-            spinner.style.display = "none"
-            nameInput.value = "";
-            telInput.value = "";
-            console.log(users);
           }
         })
+        await tableinModal();
+        
       } catch (e) {
         spinner.style.display = "none"
         ModalForm.style.display = 'none';
